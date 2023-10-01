@@ -25,19 +25,19 @@ public class MainViewModel : ViewModelBase
 
     private CommandBase groupsCommand;
     public CommandBase GroupsCommand => this.groupsCommand ??= new CommandBase(
-            execute: () => this.ActiveViewModel = new GroupsViewModel(),
+            execute: () => this.ActiveViewModel = App.Container.GetInstance<GroupsViewModel>(),
             canExecute: () => true);
 
 
     private CommandBase studentsCommand;
     public CommandBase StudentsCommand => this.studentsCommand ??= new CommandBase(
-            execute: () => this.ActiveViewModel = new StudentsViewModel(),
+            execute: () => this.ActiveViewModel = App.Container.GetInstance<StudentsViewModel>(),
             canExecute: () => true);
 
 
     private CommandBase teachersCommand;
     public CommandBase TeachersCommand => this.teachersCommand ??= new CommandBase(
-            execute: () => this.ActiveViewModel = new TeachersViewModel(),
+            execute: () => this.ActiveViewModel = App.Container.GetInstance<TeachersViewModel>(),
             canExecute: () => true);
     #endregion
 }

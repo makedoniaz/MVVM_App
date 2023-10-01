@@ -24,13 +24,6 @@ namespace Project
         public MainWindow()
         {
             InitializeComponent();
-
-            var mainViewModel = new MainViewModel()
-            {
-                ActiveViewModel = new StudentsViewModel(),
-            };
-
-            this.DataContext = mainViewModel;
         }
     }
 }
