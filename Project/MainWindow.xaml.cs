@@ -27,7 +27,7 @@ namespace Project
 
             var mainViewModel = new MainViewModel()
             {
-                ActiveViewModel = null,
+                ActiveViewModel = new StudentsViewModel(),
             };
 
             this.DataContext = mainViewModel;

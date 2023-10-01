@@ -2,8 +2,13 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Project"
-             StartupUri="MainWindow.xaml">
+             StartupUri="MainWindow.xaml"
+             xmlns:vm="clr-namespace:Project.ViewModels"
+             xmlns:v="clr-namespace:Project.Views">
     <Application.Resources>
-         
+        <DataTemplate DataType="{x:Type vm:StudentsViewModel}">
+            <v:StudentsView/>
+        </DataTemplate>
+        
     </Application.Resources>
 </Application>
