@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\USER\Desktop\newDir\MVVM_App\Project\App.xaml
-4-1434057859
+5-1413362221
 
-16-202824763
+181319636216
 1981462702791
-MainWindow.xaml;Views\GroupsView.xaml;Views\StudentsView.xaml;Views\TeachersView.xaml;
+MainWindow.xaml;Views\GroupsView.xaml;Views\InfoView.xaml;Views\StudentsView.xaml;Views\TeachersView.xaml;
 
 True
 

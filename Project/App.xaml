@@ -18,7 +18,11 @@
         <DataTemplate DataType="{x:Type vm:GroupsViewModel}">
             <v:GroupsView/>
         </DataTemplate>
-      
+
+        <DataTemplate DataType="{x:Type vm:InfoViewModel}">
+            <v:InfoView/>
+        </DataTemplate>
+
 
     </Application.Resources>
 </Application>
