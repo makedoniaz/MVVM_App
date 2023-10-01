@@ -6,9 +6,14 @@
              xmlns:vm="clr-namespace:Project.ViewModels"
              xmlns:v="clr-namespace:Project.Views">
     <Application.Resources>
+        
         <DataTemplate DataType="{x:Type vm:StudentsViewModel}">
             <v:StudentsView/>
         </DataTemplate>
-        
+
+        <DataTemplate DataType="{x:Type vm:TeachersViewModel}">
+            <v:TeachersView/>
+        </DataTemplate>
+
     </Application.Resources>
 </Application>

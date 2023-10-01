@@ -2,6 +2,7 @@
 
 namespace Project.ViewModels;
 
-public class StudentsViewModel : ViewModelBase
+public class TeachersViewModel : ViewModelBase
 {
+
 }
