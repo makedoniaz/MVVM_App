@@ -9,15 +9,14 @@
     <Grid>
         <DockPanel>
             <UniformGrid DockPanel.Dock="Left" Rows="4" Width="70" Margin="10">
-                <Button Margin="6px">Info</Button>
-                <Button Margin="6px">Groups</Button>
-                <Button Margin="6px">Students</Button>
-                <Button Margin="6px">Teachers</Button>
+                <Button Margin="6px" Command="{Binding InfoCommand}">Info</Button>
+                <Button Margin="6px" Command="{Binding GroupsCommand}">Groups</Button>
+                <Button Margin="6px" Command="{Binding StudentsCommand}">Students</Button>
+                <Button Margin="6px" Command="{Binding TeachersCommand}">Teachers</Button>
             </UniformGrid>
-            
-            <ContentControl DockPanel.Dock="Top" Content="{Binding ActiveViewModel}" Margin="16px">
 
-            </ContentControl>
+            <ContentControl DockPanel.Dock="Top" Content="{Binding ActiveViewModel}" Margin="16px" />
+
         </DockPanel>
     </Grid>
 </Window>
