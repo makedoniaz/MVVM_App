@@ -5,10 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="500">
     <Grid>
-        <ContentControl DockPanel.Dock="Top" Content="{Binding ActiveViewModel}">
+        <DockPanel>
+            <UniformGrid DockPanel.Dock="Left" Rows="4" Width="70" Margin="10">
+                <Button Margin="6px">Info</Button>
+                <Button Margin="6px">Groups</Button>
+                <Button Margin="6px">Students</Button>
+                <Button Margin="6px">Teachers</Button>
+            </UniformGrid>
+            
+            <ContentControl DockPanel.Dock="Top" Content="{Binding ActiveViewModel}" Margin="16px">
 
-        </ContentControl>
+            </ContentControl>
+        </DockPanel>
     </Grid>
 </Window>

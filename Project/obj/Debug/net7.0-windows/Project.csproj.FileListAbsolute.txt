@@ -25,3 +25,7 @@ C:\Users\USER\Desktop\newDir\MVVM_App\Project\obj\Debug\net7.0-windows\Generated
 C:\Users\USER\Desktop\newDir\MVVM_App\Project\obj\Debug\net7.0-windows\App.baml
 C:\Users\USER\Desktop\newDir\MVVM_App\Project\obj\Debug\net7.0-windows\Views\TeachersView.g.cs
 C:\Users\USER\Desktop\newDir\MVVM_App\Project\obj\Debug\net7.0-windows\Views\TeachersView.baml
+C:\Users\USER\Desktop\newDir\MVVM_App\Project\obj\Debug\net7.0-windows\Views\GroupsView.g.cs
+C:\Users\USER\Desktop\newDir\MVVM_App\Project\obj\Debug\net7.0-windows\Views\InfoView.g.cs
+C:\Users\USER\Desktop\newDir\MVVM_App\Project\obj\Debug\net7.0-windows\Views\GroupsView.baml
+C:\Users\USER\Desktop\newDir\MVVM_App\Project\obj\Debug\net7.0-windows\Views\InfoView.baml

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Project.ViewModels.Base;
 
-namespace Project.ViewModels
+
+namespace Project.ViewModels;
+
+public class InfoViewModel : ViewModelBase
 {
-    internal class InfoViewModel
-    {
-    }
+
 }
