@@ -10,10 +10,10 @@
         <ListView ItemsSource="{Binding Students}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding Id}"/>
-                        <TextBlock Text="{Binding Fullname}"/>
-                        <TextBlock Text="{Binding GroupId}"/>
+                    <StackPanel Margin="5px">
+                        <TextBlock Text="{Binding Id, StringFormat=Id: {0}}"/>
+                        <TextBlock Text="{Binding Fullname, StringFormat=Fullname: {0}}"/>
+                        <TextBlock Text="{Binding GroupId, StringFormat=Group: {0}}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

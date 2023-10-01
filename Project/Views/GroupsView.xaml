@@ -6,7 +6,17 @@
              xmlns:local="clr-namespace:Project.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Blue">
-            
+    <Grid>
+        <ListView ItemsSource="{Binding Groups}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5px">
+                        <TextBlock Text="{Binding Id, StringFormat=Id: {0}}"/>
+                        <TextBlock Text="{Binding Name, StringFormat=Name: {0}}"/>
+                        <TextBlock Text="{Binding TeacherId, StringFormat=TeacherId: {0}}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </UserControl>
