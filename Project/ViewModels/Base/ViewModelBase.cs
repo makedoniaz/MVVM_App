@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
-namespace Project.ViewModels.Base
+namespace Project.ViewModels.Base;
+
+public class ViewModelBase : INotifyPropertyChanged
 {
-    internal class ViewModelBase
+    public event PropertyChangedEventHandler? PropertyChanged;
+
+    protected void PropertyChangeMethod<T>(out T field, T value, [CallerMemberName] string propName = "")
     {
+        field = value;
+
+        if (this.PropertyChanged != null)
+            this.PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propName));
     }
 }

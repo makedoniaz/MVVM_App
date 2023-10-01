@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Project.Models;
 
-namespace Project.Models
+public class Student
 {
-    internal class Student
-    {
-    }
+    public int Id { get; set; }
+
+    public required string Fullname { get; set; }
+
+    public int GroupId { get; set; }
 }
