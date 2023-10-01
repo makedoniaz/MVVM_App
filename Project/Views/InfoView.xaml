@@ -6,7 +6,17 @@
              xmlns:local="clr-namespace:Project.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Green">
-            
-    </Grid>
+
+    <DockPanel>
+
+            <Button DockPanel.Dock="Bottom" Margin="10px" Height="50px" FontSize="12px" Content="Save" Command="{Binding SaveCommand}" />
+
+            <StackPanel Margin="10px">
+            <Label FontSize="15px" FontWeight="bold">Academy info</Label>
+            <Label Margin="0 20 0 0">Name</Label>
+            <TextBox Text="{Binding NameInput}"/>
+            <Label Margin="0 20 0 0">Description</Label>
+            <RichTextBox x:Name="DescriptionTextBox" Height="100px" />
+        </StackPanel>
+    </DockPanel>
 </UserControl>
