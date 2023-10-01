@@ -11,12 +11,12 @@
 
             <Button DockPanel.Dock="Bottom" Margin="10px" Height="50px" FontSize="12px" Content="Save" Command="{Binding SaveCommand}" />
 
-            <StackPanel Margin="10px">
+        <StackPanel Margin="10px" DataContext="{Binding Options}">
             <Label FontSize="15px" FontWeight="bold">Academy info</Label>
             <Label Margin="0 20 0 0">Name</Label>
-            <TextBox Text="{Binding NameInput}"/>
-            <Label Margin="0 20 0 0">Description</Label>
-            <RichTextBox x:Name="DescriptionTextBox" Height="100px" />
+            <TextBox Text="{Binding Name}"/>
+            <Label Margin="0 20 0 0">Adress</Label>
+            <TextBox Text="{Binding Adress}" />
         </StackPanel>
     </DockPanel>
 </UserControl>

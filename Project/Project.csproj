@@ -7,10 +7,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Json\academyOptions.json" />
+  </ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="Dapper" Version="2.0.151" />
 		<PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
 		<PackageReference Include="SimpleInjector" Version="5.4.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Json\academyOptions.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 </Project>
