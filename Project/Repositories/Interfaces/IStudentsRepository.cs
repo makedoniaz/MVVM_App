@@ -1,12 +1,9 @@
-﻿using System;
+﻿using Project.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Project.Repositories.Interfaces
+namespace Project.Repositories.Interfaces;
+
+public interface IStudentsRepository
 {
-    internal interface IStudentsRepository
-    {
-    }
+    IEnumerable<Student> GetAll();
 }
