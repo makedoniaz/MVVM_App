@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Project.Repositories.Interfaces;
 
-public interface IStudentsRepository
+public interface IStudentRepository
 {
     IEnumerable<Student> GetAll();
 }
