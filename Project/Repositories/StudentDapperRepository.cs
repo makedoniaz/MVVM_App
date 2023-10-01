@@ -1,20 +1,15 @@
 ﻿using Dapper;
 using Project.Models;
+using Project.Repositories.Base;
+using Project.Repositories.Interfaces;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace Project.Repositories;
 
-public class StudentDapperRepository
+public class StudentDapperRepository : RepositoryBase, IStudentRepository
 {
-    private const string connectionString = $"Server=localhost;Database=AcademyDb;Trusted_Connection=True;TrustServerCertificate=True";
-    private readonly SqlConnection sqlConnection;
-
-    public StudentDapperRepository()
-    {
-        this.sqlConnection = new SqlConnection(connectionString);
-        this.sqlConnection.Open();
-    }
+    public StudentDapperRepository() : base() { }
 
     public IEnumerable<Student> GetAll()
     {
