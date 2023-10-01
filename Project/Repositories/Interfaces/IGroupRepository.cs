@@ -1,9 +1,9 @@
-﻿using Project.Models;
+﻿using Project.DTOs;
 using System.Collections.Generic;
 
 namespace Project.Repositories.Interfaces;
 
 public interface IGroupRepository
 {
-    IEnumerable<Group> GetAll();
+    IEnumerable<GroupGetDTO> GetAll();
 }

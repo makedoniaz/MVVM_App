@@ -1,4 +1,5 @@
-﻿using Project.Models;
+﻿using Project.DTOs;
+using Project.Models;
 using Project.Repositories.Interfaces;
 using Project.ViewModels.Base;
 using System.Collections.ObjectModel;
@@ -10,13 +11,13 @@ public class StudentsViewModel : ViewModelBase
 
     private readonly IStudentRepository studentRepository;
 
-    public ObservableCollection<Student> Students { get; set; }
+    public ObservableCollection<StudentGetDTO> Students { get; set; }
 
     public StudentsViewModel(IStudentRepository productRepository)
     {
         this.studentRepository = productRepository;
 
-        this.Students = new ObservableCollection<Student>();
+        this.Students = new ObservableCollection<StudentGetDTO>();
         this.RefreshStudentList();
     }
 

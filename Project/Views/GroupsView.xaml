@@ -11,9 +11,9 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="5px">
-                        <TextBlock Text="{Binding Id, StringFormat=Id: {0}}"/>
                         <TextBlock Text="{Binding Name, StringFormat=Name: {0}}"/>
-                        <TextBlock Text="{Binding TeacherId, StringFormat=TeacherId: {0}}"/>
+                        <TextBlock Text="{Binding StudentsCount, StringFormat=Students Count: {0}}"/>
+                        <TextBlock Text="{Binding TeacherName, StringFormat=Teacher Name: {0}}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
